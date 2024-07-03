@@ -1,4 +1,6 @@
 # Artisan-tmd-56 Linux SetUp
+## High Level Overview
+The TMD-56 device needs to be recognized by the linux machine through the CP210x driver. Once detected, the USB path needs to be specified in the comm port configuration. Once this mapping is done, we need to ensure that the path is writeable (by changing mode to 666).
 
 ## Prerequisites / KT (Knowledge Transfer)
 #### CP210x driver

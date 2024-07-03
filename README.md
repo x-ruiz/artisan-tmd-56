@@ -8,12 +8,12 @@ The CP210x driver handles USB port recognition. By default linux kernel comes pr
 
 ## SetUp Steps
 The following are commands to be run in terminal
-1. lsusb
+1. lsusb\
 _To check usb port recognition look for "Bus 008 Device 008: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC" - if it is present, driver is working and device is detected_
-2. dmesg
+2. dmesg\
 _run dmesg right after plugging in the TMD-56 look for "**FTDI USB Serial Device converter detected**" followed by: **FTDI USB Serial Device converter now attached to [ttyUSB0]**(whichever USB port specified needs to be saved for later)_
 3. write down / copy the following: /dev/[usb port] | ex: /dev/ttyUSB0
-4. Go to artisan and select
+4. Go to artisan and select\
 _  config -> devices -> ok -> Copy paste the previous path in the comm port -> ok_
 5. Select START or ON
 _if successful, readings should be 0 and status on the top left should say monitoring...if unsuccessful proceed to the next step "Giving write access to TMD-56"._
